@@ -1,0 +1,3 @@
+1. you would type in your console g++ main.cpp -o cselab. and it will create an executable of the sources main.cpp be called cselab.exe
+2. it creates an executable file named a.exe
+3. if we want to remove the line using namespace std and have the program compiled. we need to change write sd:: to all of the iostream library such as std::cout.
