@@ -25,14 +25,14 @@ int main(){
      cout << "Enter the values in the array for row " << i << " seperated by a space, and press enter:";
         for (int j = 0; j < arraySize; j++)
         {
-        scanf ("%d",&array[i][j]);
+        scanf ("%i",&array[i][j]);
         if (array[i][j] < 0){
             negCount++;
         }
     }
 }
     if (negCount > 0){
-        cout << "There are "<< negCount << "negative values!";
+        cout << "There are "<< negCount << " negative values!";
     }else{
         cout << "All values are non-negative!";
     }
