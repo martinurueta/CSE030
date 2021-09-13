@@ -14,7 +14,7 @@ int main(){
             cout << "ERROR: your array is too large! Enter 1 to 10";
             return 0;
         }else{
-            cout << "ERROR: your array is too short! Enter 1 to 10";
+            cout << "you entered an incorrect value for the array size!";
             return 0;
         }
         
