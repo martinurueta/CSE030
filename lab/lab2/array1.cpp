@@ -8,7 +8,6 @@ int main() {
     bool isIncrease = true; // default to true if array is increasing
     cout << "Enter the size of the array:";
     cin >> arraySize; // ask user for array size
-     cin.ignore();
     if (arraySize < 0){
         cout << "ERROR: you entered an incorrect value for the array size!";
         return 0;
