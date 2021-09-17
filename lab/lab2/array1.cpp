@@ -23,12 +23,12 @@ int main() {
            break;
        }
     }
-    if (isIncrease == false){
+    if (isIncrease == false){// outputs if the array is increasing or not
         cout << "This is NOT an increasing array!" << endl;
     }else{
         cout << "This IS an increasing array!"<< endl;
     }
-        for(int i = 0; i < arraySize; i++){
+        for(int i = 0; i < arraySize; i++){// displays the array in the list
         cout << array[i] << " ";
     }
     return 0;
