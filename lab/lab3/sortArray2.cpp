@@ -4,10 +4,9 @@
 using namespace std;
  
 int main() {
-    int arraySize, key; // Create a variable that will determine the size of array
+    int arraySize; // Create a variable that will determine the size of array
     int temp = 0;
     int counter = 0;
-    bool isIncrease = true; // default to true if array is increasing
     cout << "Enter the size of the array:";
     cin >> arraySize; // ask user for array size
      cin.ignore();
