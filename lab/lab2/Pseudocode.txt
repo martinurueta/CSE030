@@ -1,0 +1,44 @@
+Array1.cpp
+--------------------------
+Create variables
+ask user to enter size
+
+if size < 0 
+ERROR
+
+ask user numbers in array
+
+for i = 1 i < size i++
+if array[i-1] > array[i]
+not increase 
+return not an increase array
+else 
+return increase array
+--------------------------
+
+Array2.cpp
+--------------------------
+create variables
+ask user to put string
+for i = size i > -1 i --
+reverse = push back the words 
+output backwards
+--------------------------
+
+Array3.cpp
+--------------------------
+create variables
+ask user to enter 2d array
+check condition if the user enter a valid numbers
+    else if fails
+        Error
+create 2d array
+ask user numbers in array
+    Get values 
+    if the number is negative 
+        negativeCounter + 1
+If there are negative output
+    there are this amount of negative number
+else
+    no negative
+--------------------------
