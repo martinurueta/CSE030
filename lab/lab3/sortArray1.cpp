@@ -17,13 +17,13 @@ int main() {
     }
     cout << "Enter the numbers in the array, separated by a space, and press enter:";
     int array[arraySize]; // create array and add value
+    int number = arraySize - 1;
     for(int i = 0; i < arraySize; i++){// function to put integers in array 
         scanf ("%i",&array[i]);
     }
-    for(int i = 0; i < arraySize; i++){
-        for(int g = arraySize - 1; g > i - 1; g--){
-
-            if(g == (arraySize - 1)){
+    for(int i = number; i > -1; i--){
+        for(int g = 0; g < i+1; g++){
+            if(g == 0){
                 min = array[i];
             }
             if (array[g] < min){
@@ -31,7 +31,7 @@ int main() {
                 pos = g;
             }
         }
-        if(min < array[i]){
+        if(min < array[i] && pos != i){
                 temp = array[i];
                 array[i] = min;
                 array[pos] = temp;

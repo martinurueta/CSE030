@@ -23,7 +23,7 @@ int main() {
         scanf ("%i",&array[i]);
     }
     for(int i = number; i > -1; i--){
-        for(int g = 0; g < i; g++){
+        for(int g = 0; g < i+1; g++){
             if(g == 0){
                 max = array[i];
             }
