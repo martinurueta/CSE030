@@ -1,0 +1,40 @@
+sortArray1.cpp
+--------------------------
+create Function SortArr(A, n)
+create variables 
+ask user if they want array ascending or descending
+if choose ascending
+    do the max array function
+else 
+    do the min array function
+output the array and state if it was ascending or desceding
+
+main()
+
+ask for array size
+ask for array numbers with space
+SortArr(A,n)
+--------------------------
+
+sortArray2.cpp
+--------------------------
+create Algorithm InsertionSort(A, n)
+    for i = 1 to i < ArraySize do
+        copy = A[i]
+        path = i
+        while path > 0 AND A[path-1] > copy do
+            A[path] = A[path-1]
+            path = path - 1
+        A[path] = copy
+--------------------------
+
+combinedArray.cpp
+--------------------------
+create Algorithm combineStr()
+    create variables 
+    while repeat > 0
+        enter string
+        repeat how many times
+        output string * repeat
+--------------------------
+            
