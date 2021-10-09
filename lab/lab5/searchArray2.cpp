@@ -5,35 +5,41 @@
 
 using namespace std;
     void binarySearchR(string *array, int min, int max, string key){
-        int mid = ((max - min) / 2) + min;
-        if(max - min > 0){
-            if(array[0] < array[1]){
+        int mid = 0;
+        if (array[0] < array[1]){
+            while(max - min > 0){
+                mid = ((max - min) / 2) + min;
                 if (key == array[mid]){
                     cout << "Found key "<< key << " at index " << mid <<"!";
+                    break;
                 }else{
                     if (key > array[mid]){
                         min = mid;
-                        binarySearchR(array, min, max, key);
                     }else if(key < array[mid]){
                         max = mid;
-                        binarySearchR(array, min, max, key);
-                    }
-                }
-            }else{
-                if (key == array[mid]){
-                    cout << "Found key "<< key << " at index " << mid <<"!";
-                }else{
-                    if (key > array[mid]){
-                        max = mid;
-                        binarySearchR(array, min, max, key);
-                    }else if(key < array[mid]){
-                        min = mid;
-                        binarySearchR(array, min, max, key);
                     }
                 }
             }
+            if(key != array[mid]){
+                cout << "The key "<< key << " was not found in the array!";
+            }
         }else{
-            cout << "The key "<< key << " was not found in the array!";
+            while(max - min > 0){
+                mid = ((max - min) / 2) + min;
+                if (key == array[mid]){
+                    cout << "Found key "<< key << " at index " << mid <<"!";
+                    break;
+                }else{
+                    if (key > array[mid]){
+                        max = mid;
+                    }else if(key < array[mid]){
+                        min = mid;
+                    }
+                }
+            }
+            if(key != array[mid]){
+                cout << "The key "<< key << " was not found in the array!";
+            }
         }
     }
 
@@ -69,7 +75,6 @@ int main(){
         arraySize ++;
     }
     file.close();
-
     file.open("words_in.txt");
 
     array = new string [arraySize];
@@ -78,7 +83,6 @@ int main(){
     }
     cout << "Enter key:";
     cin >> key;
-
     checkArraySort(array, arraySize, key);
     return 0;
 }
