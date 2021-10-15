@@ -1,0 +1,77 @@
+fileIO.cpp
+--------------------------
+open file
+check to see if there is anything in file
+    if there is something in file
+    count++
+    create array[count]
+    insert array[] of each line of the file
+output array
+
+--------------------------
+
+checkArray.cpp
+--------------------------
+checkArraySort(array, n)
+    for i = 1 i < n i++
+        if array is decending
+            array[i] > array[i-1] 
+            return -1
+        if array is ascending
+            array[i] < array[i-1] 
+            return 1
+        if array not sorted
+            return 0
+--------------------------
+
+searchArray1.cpp
+--------------------------
+checkArraySort(array, n, key)
+    for i = 1 i < n i++
+        if array is decending
+            array[i] > array[i-1] 
+            binarySearchR(array, 0, arraySize, key);
+        if array is ascending
+            array[i] < array[i-1] 
+            binarySearchR(array, 0, arraySize, key);
+        if array not sorted
+            return 0
+
+binarySearchR(array, min, max,key)
+    mid = max - min /2 + min
+    if max - min > 0 
+        if array mid == key
+            found key
+        else
+            binarySearchR(array min max key)
+    else key not found
+--------------------------
+
+searchArray2.cpp
+--------------------------
+
+checkArraySort(array, n, key)
+    for i = 1 i < n i++
+        if array is decending
+            array[i] > array[i-1] 
+            binarySearchR(array, 0, arraySize, key);
+        if array is ascending
+            array[i] < array[i-1] 
+            binarySearchR(array, 0, arraySize, key);
+        if array not sorted
+            return 0
+binarySearchR(array, min, max,key)
+    mid = max - min /2 + min
+    while max - min > 0 
+        if array mid == key
+            found key
+        else
+            if it is greater key
+            change min
+            if it is less than key 
+            change max
+    else key not found
+
+--------------------------
+
+

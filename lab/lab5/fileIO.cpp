@@ -12,7 +12,7 @@ int main(){
     string *words;
     file.open("words_in.txt");
 
-    while(!file.eof()){
+    while(!file.eof()){// count amount of line in file
         file >> data;
         count ++;
     }
@@ -20,11 +20,11 @@ int main(){
 
     file.open("words_in.txt");
 
-    words = new string [count];
-    for(int i = 0; i < count; i++){
+    words = new string [count]; // create size of array with counter
+    for(int i = 0; i < count; i++){// put line by line in array
         file >> words[i];
     }
-    for(int i = 0; i < count; i++){
+    for(int i = 0; i < count; i++){// output array
         cout << words[i]<<" ";
     }
     return 0;

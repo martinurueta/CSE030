@@ -7,26 +7,26 @@ using namespace std;
     void binarySearchR(string *array, int min, int max, string key){
         int mid = ((max - min) / 2) + min;
         if(max - min > 0){
-            if(array[0] < array[1]){
+            if(array[0] < array[1]){ // if it is accending
                 if (key == array[mid]){
                     cout << "Found key "<< key << " at index " << mid <<"!";
                 }else{
-                    if (key > array[mid]){
+                    if (key > array[mid]){// if key is greater than array mid change mid with min
                         min = mid;
                         binarySearchR(array, min, max, key);
-                    }else if(key < array[mid]){
+                    }else if(key < array[mid]){// if key is less than array mid change mid with max
                         max = mid;
                         binarySearchR(array, min, max, key);
                     }
                 }
-            }else{
+            }else{ // if it is decending
                 if (key == array[mid]){
                     cout << "Found key "<< key << " at index " << mid <<"!";
                 }else{
-                    if (key > array[mid]){
+                    if (key > array[mid]){// if key is greater than array mid change mid with max
                         max = mid;
                         binarySearchR(array, min, max, key);
-                    }else if(key < array[mid]){
+                    }else if(key < array[mid]){// if key is less than array mid change mid with min
                         min = mid;
                         binarySearchR(array, min, max, key);
                     }
@@ -40,9 +40,9 @@ using namespace std;
     void checkArraySort(string *array, int arraySize, string key){
         int sort = 0;
         for(int i = 1; i < arraySize; i++){
-            if(array[i] > array[i-1]){
+            if(array[i] > array[i-1]){// if it is accending
                 sort++;
-            }else if(array[i] < array[i-1]){
+            }else if(array[i] < array[i-1]){// if it is decending
                 sort--;
             }
         }

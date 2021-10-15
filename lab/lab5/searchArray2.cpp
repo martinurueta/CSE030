@@ -7,7 +7,7 @@ using namespace std;
     void binarySearchR(string *array, int min, int max, string key){
         int mid = 0;
         if (array[0] < array[1]){
-            while(max - min > 0){
+            while(max - min > 0){//acending
                 mid = ((max - min) / 2) + min;
                 if (key == array[mid]){
                     cout << "Found key "<< key << " at index " << mid <<"!";
@@ -24,7 +24,7 @@ using namespace std;
                 cout << "The key "<< key << " was not found in the array!";
             }
         }else{
-            while(max - min > 0){
+            while(max - min > 0){//decending
                 mid = ((max - min) / 2) + min;
                 if (key == array[mid]){
                     cout << "Found key "<< key << " at index " << mid <<"!";
