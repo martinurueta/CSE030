@@ -1,0 +1,15 @@
+timeInput.cpp
+--------------------------
+Create Struct for time
+bool getTimeFromUser(struct Time &time)
+    Make a bool function to see if the time is in the 24 hour layout
+void print24Hour(struct Time time1, struct Time time2){
+    Make a function that outputs the start and end times
+--------------------------
+
+courseInfo.cpp
+--------------------------
+Create Struct for time and Course
+    get amount of courses
+    for i = 1 i <= courses * 7 i++
+        output all the courses information from 1 to 7 and repeats
